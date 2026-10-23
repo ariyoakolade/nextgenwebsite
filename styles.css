@@ -12,6 +12,8 @@
     --muted: #5b6472;
     --border: rgba(17, 24, 39, 0.08);
     --shadow: 0 20px 50px rgba(7, 27, 73, 0.12);
+    --page-gutter: clamp(18px, 3vw, 24px);
+    --content-width: 1280px;
 }
 
 * {
@@ -3254,4 +3256,149 @@ main > section:not(.hero) {
     .career-cta-link {
         width: 100%;
     }
+}
+
+.main-nav {
+    padding-right: var(--page-gutter);
+    padding-left: var(--page-gutter);
+}
+
+footer,
+.site-footer {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.footer-content,
+.footer-bottom {
+    width: min(100%, var(--content-width));
+    padding-right: var(--page-gutter);
+    padding-left: var(--page-gutter);
+}
+
+.hero {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.hero-content {
+    width: min(100%, var(--content-width));
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: var(--page-gutter);
+    padding-left: var(--page-gutter);
+}
+
+.about-section,
+.philosophy-section,
+.opportunities-section {
+    padding-right: max(var(--page-gutter), calc((100% - var(--content-width)) / 2 + var(--page-gutter)));
+    padding-left: max(var(--page-gutter), calc((100% - var(--content-width)) / 2 + var(--page-gutter)));
+}
+
+.tournament-section {
+    width: min(100%, var(--content-width));
+    padding-right: var(--page-gutter);
+    padding-left: var(--page-gutter);
+}
+
+.cta-panel {
+    width: min(100%, var(--content-width));
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: var(--page-gutter);
+    padding-left: var(--page-gutter);
+}
+
+.gallery-heading {
+    width: min(100%, var(--content-width));
+    padding-right: var(--page-gutter);
+    padding-left: var(--page-gutter);
+}
+
+.about-story {
+    padding-right: max(var(--page-gutter), calc((100% - var(--content-width)) / 2 + var(--page-gutter)));
+    padding-left: max(var(--page-gutter), calc((100% - var(--content-width)) / 2 + var(--page-gutter)));
+}
+
+.about-values,
+.about-life-heading,
+.about-player-qualities,
+.about-gallery {
+    padding-right: var(--page-gutter);
+    padding-left: var(--page-gutter);
+}
+
+.contact-hero,
+.contact-layout {
+    padding-right: var(--page-gutter);
+    padding-left: var(--page-gutter);
+}
+
+.programs-hero {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.programs-hero-content,
+.program-intro,
+.program-story-inner,
+.program-cta-inner,
+.opportunities-hero-content,
+.career-hero-content,
+.career-pathways-inner,
+.career-advisory-inner,
+.career-cta-inner,
+.tournament-event-hero-content,
+.tournament-event-story-inner,
+.tournament-journey-inner,
+.tournament-host-inner {
+    padding-right: var(--page-gutter);
+    padding-left: var(--page-gutter);
+}
+
+.opportunities-page .opportunities-hero,
+.career-hero,
+.tournament-page .tournament-event-hero {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.opportunities-hero-content {
+    width: min(100%, var(--content-width));
+}
+
+.opportunity-intro,
+.opportunity-story,
+.opportunity-process,
+.opportunity-cta {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.opportunity-intro-inner,
+.opportunity-story-inner,
+.opportunity-process-inner,
+.opportunity-cta-inner {
+    padding-right: var(--page-gutter);
+    padding-left: var(--page-gutter);
+}
+
+.tournament-event-story,
+.tournament-event-journey,
+.tournament-host-cta {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.gallery-page-hero,
+.gallery-collection {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.gallery-page-hero-inner,
+.gallery-collection-inner {
+    padding-right: var(--page-gutter);
+    padding-left: var(--page-gutter);
 }
